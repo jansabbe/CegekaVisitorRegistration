@@ -10,4 +10,6 @@
 
 @interface CegekaVisitorRegistrationTests : SenTestCase
 
+@property (nonatomic, readonly) NSManagedObjectContext *testingContext;
+
 @end
