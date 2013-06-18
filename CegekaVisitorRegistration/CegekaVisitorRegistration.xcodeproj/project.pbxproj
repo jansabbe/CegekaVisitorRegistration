@@ -17,7 +17,7 @@
 		567E31F817709E0900D89F54 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 567E31F717709E0900D89F54 /* Default@2x.png */; };
 		567E31FA17709E0900D89F54 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 567E31F917709E0900D89F54 /* Default-568h@2x.png */; };
 		567E31FD17709E0900D89F54 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 567E31FB17709E0900D89F54 /* MainStoryboard.storyboard */; };
-		567E320017709E0900D89F54 /* CGKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567E31FF17709E0900D89F54 /* CGKViewController.m */; };
+		567E320017709E0900D89F54 /* CGKInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 567E31FF17709E0900D89F54 /* CGKInputViewController.m */; };
 		567E320817709E0A00D89F54 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E320717709E0A00D89F54 /* SenTestingKit.framework */; };
 		567E320917709E0A00D89F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E317709E0900D89F54 /* UIKit.framework */; };
 		567E320A17709E0A00D89F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E517709E0900D89F54 /* Foundation.framework */; };
@@ -50,8 +50,8 @@
 		567E31F717709E0900D89F54 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		567E31F917709E0900D89F54 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		567E31FC17709E0900D89F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		567E31FE17709E0900D89F54 /* CGKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGKViewController.h; sourceTree = "<group>"; };
-		567E31FF17709E0900D89F54 /* CGKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGKViewController.m; sourceTree = "<group>"; };
+		567E31FE17709E0900D89F54 /* CGKInputViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGKInputViewController.h; sourceTree = "<group>"; };
+		567E31FF17709E0900D89F54 /* CGKInputViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGKInputViewController.m; sourceTree = "<group>"; };
 		567E320617709E0A00D89F54 /* CegekaVisitorRegistrationTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CegekaVisitorRegistrationTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		567E320717709E0A00D89F54 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		567E320F17709E0A00D89F54 /* CegekaVisitorRegistrationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CegekaVisitorRegistrationTests-Info.plist"; sourceTree = "<group>"; };
@@ -120,8 +120,8 @@
 				567E31F217709E0900D89F54 /* CGKAppDelegate.h */,
 				567E31F317709E0900D89F54 /* CGKAppDelegate.m */,
 				567E31FB17709E0900D89F54 /* MainStoryboard.storyboard */,
-				567E31FE17709E0900D89F54 /* CGKViewController.h */,
-				567E31FF17709E0900D89F54 /* CGKViewController.m */,
+				567E31FE17709E0900D89F54 /* CGKInputViewController.h */,
+				567E31FF17709E0900D89F54 /* CGKInputViewController.m */,
 				567E31EA17709E0900D89F54 /* Supporting Files */,
 			);
 			path = CegekaVisitorRegistration;
@@ -273,7 +273,7 @@
 			files = (
 				567E31F017709E0900D89F54 /* main.m in Sources */,
 				567E31F417709E0900D89F54 /* CGKAppDelegate.m in Sources */,
-				567E320017709E0900D89F54 /* CGKViewController.m in Sources */,
+				567E320017709E0900D89F54 /* CGKInputViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +456,7 @@
 				567E321A17709E0A00D89F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		567E321B17709E0A00D89F54 /* Build configuration list for PBXNativeTarget "CegekaVisitorRegistrationTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +465,7 @@
 				567E321D17709E0A00D89F54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
