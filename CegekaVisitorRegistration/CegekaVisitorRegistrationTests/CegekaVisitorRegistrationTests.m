@@ -57,7 +57,7 @@
     request.predicate = [NSPredicate predicateWithFormat:@"firstName = %@", @"Name2"];
     
     NSArray* result = [self.testingContext executeFetchRequest:request error:nil];
-    STAssertEquals([result count], 1u, nil);
+    STAssertEquals([result count], 200u, nil);
     STAssertEqualObjects(result[0], visitor2, nil);
 }
 

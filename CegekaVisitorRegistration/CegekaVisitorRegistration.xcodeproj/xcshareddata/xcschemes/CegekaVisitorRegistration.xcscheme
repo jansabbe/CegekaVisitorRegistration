@@ -20,6 +20,20 @@
                ReferencedContainer = "container:CegekaVisitorRegistration.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "567E320517709E0A00D89F54"
+               BuildableName = "CegekaVisitorRegistrationTests.octest"
+               BlueprintName = "CegekaVisitorRegistrationTests"
+               ReferencedContainer = "container:CegekaVisitorRegistration.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
