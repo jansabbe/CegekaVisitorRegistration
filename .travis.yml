@@ -1,3 +1,7 @@
 language: objective-c
 before_script: cd CegekaVisitorRegistration
-xcode_sdk: iphonesimulator
+before_install:
+    - brew update
+    - brew install xctool --HEAD
+script: xctool -scheme CegekaVisitorRegistration -project CegekaVisitorRegistration.xcodeproj -sdk iphonesimulator -configuration Release test
+
