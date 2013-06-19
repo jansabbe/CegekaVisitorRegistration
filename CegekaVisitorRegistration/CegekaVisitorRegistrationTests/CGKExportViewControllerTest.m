@@ -60,14 +60,34 @@
 {
     CGKVisitor* visitor1 = [CGKVisitor insertInManagedObjectContext:self.testingContext];
     CGKVisitor* visitor2 = [CGKVisitor insertInManagedObjectContext:self.testingContext];
-    [self.testingContext save:nil];
-
+    NSError* error;
+    [self.testingContext save:&error];
+    STAssertNil(error, nil);
+    
     //Calling private method for testing
     NSData* data = [self.exportController performSelector:@selector(visitorCsvAttachmentWithOnlyUnsentVisitors:) withObject:[NSNumber numberWithBool:YES]];
     NSString* actualCsv = [NSString stringWithUTF8String:[data bytes]];
 
     NSString* expectedCsv = [NSString stringWithFormat:@"%@\n%@\n", [visitor1 descriptionForCSV], [visitor2 descriptionForCSV] ];
+    NSLog(@"Actual: %@", actualCsv);
+    NSLog(@"Expected: %@", actualCsv);
     STAssertEqualObjects(actualCsv, expectedCsv, nil);
+}
+
+-(void) testDoesNotCreateCsvFileWhenNoNewVisitors
+{
+    CGKVisitor* visitor1 = [CGKVisitor insertInManagedObjectContext:self.testingContext];
+    visitor1.sentToAdminValue = YES;
+    CGKVisitor* visitor2 = [CGKVisitor insertInManagedObjectContext:self.testingContext];
+    visitor2.sentToAdminValue = YES;
+
+    NSError* error;
+    [self.testingContext save:&error];
+    STAssertNil(error, nil);
+    
+    //Calling private method for testing
+    NSData* data = [self.exportController performSelector:@selector(visitorCsvAttachmentWithOnlyUnsentVisitors:) withObject:[NSNumber numberWithBool:YES]];
+    STAssertNil(data, nil);
 }
 
 @end
