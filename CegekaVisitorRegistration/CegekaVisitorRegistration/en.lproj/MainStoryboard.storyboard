@@ -52,24 +52,6 @@
                                     <action selector="emailEdited:" destination="2" eventType="editingChanged" id="xyX-TG-Bud"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lastname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="sai-Sv-2eH">
-                                <rect key="frame" x="705" y="317" width="244" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="visiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="kgB-rk-l2P">
-                                <rect key="frame" x="705" y="382" width="244" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="firstname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="XG8-g1-Ra3">
-                                <rect key="frame" x="705" y="263" width="70" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Yah-ob-a2o">
                                 <rect key="frame" x="716" y="441" width="59" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -97,12 +79,9 @@
                     <connections>
                         <outlet property="badgeView" destination="uzA-fg-0XQ" id="am9-9g-5hH"/>
                         <outlet property="emailTextField" destination="qHj-DS-2Ck" id="RYp-qk-I45"/>
-                        <outlet property="firstNameLabel" destination="XG8-g1-Ra3" id="ZBa-lT-xxm"/>
                         <outlet property="firstNameTextField" destination="LlC-SD-mb5" id="FeU-6f-21n"/>
-                        <outlet property="lastNameLabel" destination="sai-Sv-2eH" id="KI5-Ae-GgR"/>
                         <outlet property="lastNameTextField" destination="kbu-VA-pQT" id="1J7-ei-oVA"/>
                         <outlet property="licensePlateTextField" destination="cy8-df-A2m" id="gMM-Z4-l5M"/>
-                        <outlet property="visitingLabel" destination="kgB-rk-l2P" id="WLs-QE-t03"/>
                         <outlet property="visitingTextField" destination="m4g-ef-qQo" id="idn-g5-NSd"/>
                     </connections>
                 </viewController>
@@ -111,31 +90,6 @@
             <point key="canvasLocation" x="-262" y="-125"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CGKBadgeView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKBadgeView.h"/>
-        </class>
-        <class className="CGKInputViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKInputViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emailEdited:"/>
-                <relationship kind="action" name="firstNameEdited:"/>
-                <relationship kind="action" name="lastNameEdited:"/>
-                <relationship kind="action" name="licensePlateEdited:"/>
-                <relationship kind="action" name="printVisitorBadge:"/>
-                <relationship kind="action" name="visitingEdited:"/>
-                <relationship kind="outlet" name="badgeView" candidateClass="CGKBadgeView"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="firstNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="firstNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lastNameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="lastNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="licensePlateTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="visitingLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="visitingTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
