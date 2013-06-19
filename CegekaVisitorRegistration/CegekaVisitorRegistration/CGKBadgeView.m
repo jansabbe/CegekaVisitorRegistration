@@ -46,7 +46,6 @@
                                       BADGE_WIDTH,
                                       BADGE_HEIGHT));
     
-    
     CGContextSetRGBFillColor( ctx, 0, 0, 0, 1);    
     CGContextSaveGState(ctx);
     CGContextTranslateCTM(ctx, 0.0f, self.bounds.size.height);
@@ -56,41 +55,31 @@
     
     CGContextDrawImage (ctx, CGRectMake(0, self.bounds.size.height - LOGO_HEIGHT, LOGO_WIDTH, LOGO_HEIGHT), logo.CGImage);
     CGContextSetTextDrawingMode(ctx, kCGTextFill);
-    
-    CGSize size;
-    
-    //
-    
-    // Draw a line
-    //Start at this point
-    CGContextMoveToPoint(ctx, 0, DIVISOR_LINE);
-    
-    //Give instructions to the CGContext
-    //(move "pen" around the screen)
-    CGContextAddLineToPoint(ctx, BADGE_WIDTH, DIVISOR_LINE);
-    
-    
-    //Draw it
-    CGContextStrokePath(ctx);
-    //
-    
-    float offSetX = LOGO_WIDTH + (BADGE_WIDTH - LOGO_WIDTH)/2;
-    float offSetY = DIVISOR_LINE;
 
-    // first name
-    size = [self.firstName sizeWithFont:[UIFont fontWithName:@"Helvetica" size:FONT_SIZE_EXTRA_LARGE]];
-    offSetX = offSetX - size.width/2;
+    ///////////////
+    // DEBUG -- draw devisor line
+    // Start at this point
+    CGContextMoveToPoint(ctx, 0, DIVISOR_LINE);
+    // Give instructions to the CGContext
+    // (move "pen" around the screen)
+    CGContextAddLineToPoint(ctx, BADGE_WIDTH, DIVISOR_LINE);
+    // Draw it
+    CGContextStrokePath(ctx);
+    // END DEBUG
+    ///////////////
+
+    float offSet;
     
+    // first name
+    offSet = [self calculateOffSetForString:self.firstName withFontSize:FONT_SIZE_EXTRA_LARGE];
     CGContextSelectFont(ctx, "Helvetica", FONT_SIZE_EXTRA_LARGE, kCGEncodingMacRoman);
-    CGContextSetTextPosition(ctx, offSetX, offSetY + INSET);
+    CGContextSetTextPosition(ctx, offSet, DIVISOR_LINE + INSET);
     CGContextShowText(ctx, [[self.firstName uppercaseString] UTF8String], [self.firstName length]);
     
     // last name
-    size = [self.lastName sizeWithFont:[UIFont fontWithName:@"Helvetica" size:FONT_SIZE_LARGE]];
-    offSetX = offSetX - size.width/2;
-    
+    offSet = [self calculateOffSetForString:self.lastName withFontSize:FONT_SIZE_LARGE];
     CGContextSelectFont(ctx, "Helvetica", FONT_SIZE_LARGE, kCGEncodingMacRoman);
-    CGContextSetTextPosition(ctx, offSetX, offSetY - 30 * INSET);
+    CGContextSetTextPosition(ctx, offSet, DIVISOR_LINE - 30 * INSET);
     CGContextShowText(ctx, [[self.lastName uppercaseString] UTF8String], [self.lastName length]);
     
     CGContextSetRGBFillColor( ctx, 0.6, 0.6, 0.6, 1);
@@ -112,6 +101,13 @@
     CGContextShowText(ctx, [[formatter stringFromDate:now] UTF8String], [[formatter stringFromDate:now] length]);
 
     CGContextRestoreGState(ctx);
+}
+
+- (float) calculateOffSetForString:(NSString *)s withFontSize:(float)fontSize {
+    float offSet = LOGO_WIDTH + (BADGE_WIDTH - LOGO_WIDTH)/2;
+    CGSize size = [s sizeWithFont:[UIFont fontWithName:@"Helvetica" size:fontSize]];
+    offSet = offSet - size.width/2;
+    return offSet;
 }
 
 - (UIImage *) getBadgeImage {
