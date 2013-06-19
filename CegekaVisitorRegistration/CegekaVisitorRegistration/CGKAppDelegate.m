@@ -7,6 +7,9 @@
 //
 
 #import "CGKAppDelegate.h"
+//#import "CGKWelcomeViewController.h"
+#import "CGKInputViewController.h"
+#import "CGKExportViewController.h"
 
 @implementation CGKAppDelegate
 
@@ -18,9 +21,17 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    CGKInputViewController *inputVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKInputViewController"];
+    [inputVC setManagedObjectContext:self.managedObjectContext];
+    CGKExportViewController *exportVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKExportViewController"];
+    [exportVC setManagedObjectContext:self.managedObjectContext];
+    
+    
     return YES;
 }
-							
+
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
