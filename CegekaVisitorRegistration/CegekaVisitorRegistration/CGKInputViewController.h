@@ -10,7 +10,7 @@
 #import "CGKBadgeView.h"
 #import "CGKVisitor.h"
 
-@interface CGKInputViewController : UIViewController /*<UIPrintInteractionControllerDelegate>*/
+@interface CGKInputViewController : UIViewController <UIPrintInteractionControllerDelegate>
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 

@@ -56,43 +56,38 @@
 
 - (void) printVisitorBadge {
 
-    //    NSString *path = [[NSBundle mainBundle] pathForResource:@"Default" ofType:@"png"];
-    //    NSData *dataFromPath = [NSData dataWithContentsOfFile:path];
-    //
-    //UIImage *image = [self.badgeView getBadgeImage];
+    UIImage *image = [self.badgeView getBadgeImage];
     
+    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
     
-    
-    
-    //    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-    //
-    //    if(printController && [UIPrintInteractionController canPrintData:dataFromPath]) {
-    //
-    //        printController.delegate = self;
-    //
-    //        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-    //        printInfo.outputType = UIPrintInfoOutputGeneral;
-    //        printInfo.jobName = [path lastPathComponent];
-    //        printInfo.duplex = UIPrintInfoDuplexLongEdge;
-    //        printController.printInfo = printInfo;
-    //        printController.showsPageRange = YES;
-    //        printController.printingItem = dataFromPath;
-    //
-    //        void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) = ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) {
-    //            if (!completed && error) {
-    //                NSLog(@"FAILED! due to error in domain %@ with error code %u", error.domain, error.code);
-    //            }
-    //        };
-    //
-    //        [printController presentAnimated:YES completionHandler:completionHandler];
-    //
-    //    }
+    if (printController && [UIPrintInteractionController canPrintData:UIImagePNGRepresentation(image)]) {
+        
+        printController.delegate = self;
+        
+        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
+        printInfo.outputType = UIPrintInfoOutputGeneral;
+        printInfo.jobName = [self printJobName];
+        printInfo.duplex = UIPrintInfoDuplexLongEdge;
+        printController.printInfo = printInfo;
+        printController.showsPageRange = YES;
+        printController.printingItem = image;
+        
+        void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) = ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) {
+            if (!completed && error) {
+                NSLog(@"FAILED! due to error in domain %@ with error code %u", error.domain, error.code);
+            }
+        };
+        
+        [printController presentAnimated:YES completionHandler:completionHandler];  
+    }
+}
+
+- (id) printJobName {
+    return [NSString stringWithFormat: @"%@_%@", self.firstNameTextField.text, self.lastNameTextField.text];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSLog(@"CGKInputViewController: viewDidLoad was called ...");
-    NSLog(@"badgeView: %@", self.badgeView);
 }
 
 - (void)didReceiveMemoryWarning
