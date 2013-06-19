@@ -50,7 +50,7 @@
 
     NSArray *listOfVisitorsSinceLastExport = [CGKVisitor visitorsSince:_sendAllVisitorsSwitch.isOn inManagedObjectContext:self.managedObjectContext];
     if ([listOfVisitorsSinceLastExport count] > 0) {
-        NSMutableString *visitorList = nil;
+        NSMutableString *visitorList = [[NSMutableString alloc] init];
         for (CGKVisitor *visitor in listOfVisitorsSinceLastExport) {
             [visitorList appendString:[visitor descriptionForCSV]];
             [visitorList appendString:@"\n"];
