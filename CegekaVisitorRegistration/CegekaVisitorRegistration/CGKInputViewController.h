@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CGKInputViewController : UIViewController
+@interface CGKInputViewController : UIViewController <UIPrintInteractionControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *visitingTextField;

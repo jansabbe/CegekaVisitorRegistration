@@ -81,6 +81,12 @@
                                     <action selector="printVisitorBadge:" destination="2" eventType="touchUpInside" id="B69-pl-sQj"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Default.png" translatesAutoresizingMaskIntoConstraints="NO" id="M6f-aL-hWK">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="VRi-lC-bw0"/>
+                                    <constraint firstAttribute="height" constant="128" id="WFh-Qk-WCZ"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -97,6 +103,7 @@
                             <constraint firstAttribute="trailing" secondItem="sai-Sv-2eH" secondAttribute="trailing" constant="75" id="WPg-bB-CGk"/>
                             <constraint firstItem="kgB-rk-l2P" firstAttribute="leading" secondItem="sai-Sv-2eH" secondAttribute="leading" type="default" id="a3S-ib-nSd"/>
                             <constraint firstItem="LlC-SD-mb5" firstAttribute="top" secondItem="5" secondAttribute="top" constant="162" id="cAL-qR-HQp"/>
+                            <constraint firstAttribute="trailing" secondItem="M6f-aL-hWK" secondAttribute="trailing" constant="189" id="chV-fA-6tA"/>
                             <constraint firstItem="kgB-rk-l2P" firstAttribute="top" secondItem="5" secondAttribute="top" constant="301" id="djj-X9-IMe"/>
                             <constraint firstItem="qHj-DS-2Ck" firstAttribute="leading" secondItem="m4g-ef-qQo" secondAttribute="leading" type="default" id="eRJ-OL-lgh"/>
                             <constraint firstItem="qHj-DS-2Ck" firstAttribute="trailing" secondItem="cy8-df-A2m" secondAttribute="trailing" type="default" id="fy0-rI-IF1"/>
@@ -105,6 +112,7 @@
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="trailing" secondItem="kbu-VA-pQT" secondAttribute="trailing" type="default" id="iYR-PW-4y4"/>
                             <constraint firstItem="sai-Sv-2eH" firstAttribute="top" secondItem="5" secondAttribute="top" constant="236" id="ipx-EE-XUU"/>
                             <constraint firstItem="LlC-SD-mb5" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="200" id="jwf-qK-lfb"/>
+                            <constraint firstItem="M6f-aL-hWK" firstAttribute="top" secondItem="5" secondAttribute="top" constant="29" id="san-PX-vg5"/>
                             <constraint firstItem="Yah-ob-a2o" firstAttribute="trailing" secondItem="XG8-g1-Ra3" secondAttribute="trailing" type="default" id="ube-gp-zZo"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="kbu-VA-pQT" secondAttribute="leading" type="default" id="xli-hS-5TS"/>
                         </constraints>
@@ -127,6 +135,9 @@
             <point key="canvasLocation" x="-262" y="-125"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Default.png" width="320" height="480"/>
+    </resources>
     <classes>
         <class className="CGKInputViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKInputViewController.h"/>
