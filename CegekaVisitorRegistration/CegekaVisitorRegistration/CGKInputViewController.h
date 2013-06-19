@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "CGKBadgeView.h"
+#import "CGKVisitor.h"
 
 @interface CGKInputViewController : UIViewController /*<UIPrintInteractionControllerDelegate>*/
+
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+//@property (strong, nonatomic) CGKVisitor *visitor;
+
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *visitingTextField;
@@ -25,6 +30,7 @@
 - (IBAction)licensePlateEdited:(id)sender;
 
 - (IBAction)printVisitorBadge:(id)sender;
+
 
 
 @end

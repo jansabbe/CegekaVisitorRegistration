@@ -36,10 +36,16 @@
 }
 
 - (IBAction)printVisitorBadge:(id)sender {
+    NSError *error = nil;
     NSLog(@"CGKInputViewController: printVisitorBadge was called...");
+    CGKVisitor* visitor = [CGKVisitor insertInManagedObjectContext:self.managedObjectContext];
+    visitor.firstName = self.firstNameTextField.text;
+    visitor.lastName = self.lastNameTextField.text;
+    visitor.visiting = self.visitingTextField.text;
+    visitor.licensePlate = self.licensePlateTextField.text;
+    visitor.email = self.emailTextField.text;
+    [self.managedObjectContext save:&error];
 }
-
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
