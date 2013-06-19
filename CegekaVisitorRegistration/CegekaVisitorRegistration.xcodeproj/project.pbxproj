@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01613F4A17719CD9000202A2 /* CGKBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01613F4917719CD9000202A2 /* CGKBadgeView.m */; };
 		567E31E417709E0900D89F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E317709E0900D89F54 /* UIKit.framework */; };
 		567E31E617709E0900D89F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E517709E0900D89F54 /* Foundation.framework */; };
 		567E31E817709E0900D89F54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E717709E0900D89F54 /* CoreGraphics.framework */; };
@@ -45,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01613F4817719CD9000202A2 /* CGKBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKBadgeView.h; sourceTree = "<group>"; };
+		01613F4917719CD9000202A2 /* CGKBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGKBadgeView.m; sourceTree = "<group>"; };
 		567E31E017709E0900D89F54 /* CegekaVisitorRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CegekaVisitorRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		567E31E317709E0900D89F54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		567E31E517709E0900D89F54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -102,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01613F4717719CA9000202A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				01613F4817719CD9000202A2 /* CGKBadgeView.h */,
+				01613F4917719CD9000202A2 /* CGKBadgeView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		567E31D717709E0900D89F54 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		567E31E917709E0900D89F54 /* CegekaVisitorRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				01613F4717719CA9000202A2 /* View */,
 				721C3105177196EE00B475F4 /* images */,
 				72AEF4CE1770ABEE00555D90 /* Model */,
 				567E31F217709E0900D89F54 /* CGKAppDelegate.h */,
@@ -319,6 +332,7 @@
 				72AEF4CC1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */,
 				72AEF4D31770ABFC00555D90 /* _CGKVisitor.m in Sources */,
 				72AEF4D51770ABFC00555D90 /* CGKVisitor.m in Sources */,
+				01613F4A17719CD9000202A2 /* CGKBadgeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

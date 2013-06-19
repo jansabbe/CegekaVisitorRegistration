@@ -32,42 +32,12 @@
 - (IBAction)licensePlateEdited:(id)sender {
 }
 
-- (IBAction)printVisitorBadge:(id)sender {
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Default" ofType:@"png"];
-    NSData *dataFromPath = [NSData dataWithContentsOfFile:path];
-    
-    UIPrintInteractionController *printController = [UIPrintInteractionController sharedPrintController];
-    
-    if(printController && [UIPrintInteractionController canPrintData:dataFromPath]) {
-        
-        printController.delegate = self;
-        
-        UIPrintInfo *printInfo = [UIPrintInfo printInfo];
-        printInfo.outputType = UIPrintInfoOutputGeneral;
-        printInfo.jobName = [path lastPathComponent];
-        printInfo.duplex = UIPrintInfoDuplexLongEdge;
-        printController.printInfo = printInfo;
-        printController.showsPageRange = YES;
-        printController.printingItem = dataFromPath;
-        
-        void (^completionHandler)(UIPrintInteractionController *, BOOL, NSError *) = ^(UIPrintInteractionController *printController, BOOL completed, NSError *error) {
-            if (!completed && error) {
-                NSLog(@"FAILED! due to error in domain %@ with error code %u", error.domain, error.code);
-            }
-        };
-        
-        [printController presentAnimated:YES completionHandler:completionHandler];
-        
-    }
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-//    [btn addTarget:self action:@selector(printItem) forControlEvents:UIControlEventTouchDown];
-//    [btn setTitle:@"PRINT" forState:UIControlStateNormal];
-//    btn.frame = CGRectMake(0, 100, 320, 50);
-//    [self.view addSubview:btn];
+    NSLog(@"CGKInputViewController: viewDidLoad was called ...");
+    NSLog(@"badgeView: %@", self.badgeView);
 }
 
 - (void)didReceiveMemoryWarning

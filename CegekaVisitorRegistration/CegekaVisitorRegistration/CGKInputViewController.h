@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CGKBadgeView.h"
 
-@interface CGKInputViewController : UIViewController <UIPrintInteractionControllerDelegate>
+@interface CGKInputViewController : UIViewController /*<UIPrintInteractionControllerDelegate>*/
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *visitingTextField;
@@ -18,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UILabel *firstNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *lastNameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *visitingLabel;
+@property (strong, nonatomic) IBOutlet CGKBadgeView *badgeView;
 
 - (IBAction)firstNameEdited:(id)sender;
 - (IBAction)lastNameEdited:(id)sender;
