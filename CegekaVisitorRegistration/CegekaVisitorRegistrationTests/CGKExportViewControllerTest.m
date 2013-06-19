@@ -70,8 +70,8 @@
     NSString* actualCsv = [NSString stringWithUTF8String:[data bytes]];
 
     NSString* expectedCsv = [NSString stringWithFormat:@"%@\n%@\n", [visitor1 descriptionForCSV], [visitor2 descriptionForCSV] ];
-    NSLog(@"Actual: %@", actualCsv);
-    NSLog(@"Expected: %@", expectedCsv);
+    NSLog(@"Actual: \nSTART\n%@\nEND\n", actualCsv);
+    NSLog(@"Expected: \nSTART\n%@\nEND\n", expectedCsv);
     STAssertEqualObjects(actualCsv, expectedCsv, nil);
 }
 
