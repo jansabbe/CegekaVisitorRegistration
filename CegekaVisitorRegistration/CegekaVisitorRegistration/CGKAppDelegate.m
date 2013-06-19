@@ -7,9 +7,7 @@
 //
 
 #import "CGKAppDelegate.h"
-//#import "CGKWelcomeViewController.h"
-#import "CGKInputViewController.h"
-#import "CGKExportViewController.h"
+#import "CGKWelcomeViewController.h"
 
 @implementation CGKAppDelegate
 
@@ -21,11 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
-    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-    CGKInputViewController *inputVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKInputViewController"];
-    [inputVC setManagedObjectContext:self.managedObjectContext];
-    CGKExportViewController *exportVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKExportViewController"];
-    [exportVC setManagedObjectContext:self.managedObjectContext];
+//    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//    CGKWelcomeViewController *welcomeVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKWelcomeViewController"];
+//    [welcomeVC setManagedObjectContext:_managedObjectContext];
+////    CGKInputViewController *inputVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKInputViewController"];
+////    [inputVC setManagedObjectContext:_managedObjectContext];
+////    CGKExportViewController *exportVC = [storyBoard instantiateViewControllerWithIdentifier:@"CGKExportViewController"];
+////    [exportVC setManagedObjectContext:self.managedObjectContext];
     
     
     return YES;

@@ -13,9 +13,11 @@
 // Custom logic goes here.
 
 + (NSArray *)visitorsSince:(BOOL)lastExport inManagedObjectContext:(NSManagedObjectContext*)moc{
+    
     // Create the fetch request for the entity.
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
     // Edit the entity name as appropriate.
+//    NSEntityDescription *entity = 
     NSEntityDescription *entity = [NSEntityDescription entityForName:@"CGKVisitor" inManagedObjectContext:moc];
     [fetchRequest setEntity:entity];
     //add a predicate if necessary
