@@ -53,6 +53,10 @@
     [self setVisitDate:[NSDate date]];
 }
 
+- (void)markAsSentToAdmin {
+    [self setSentToAdminValue:YES];
+}
+
 - (NSString*) csvEscape:(NSString*) value
 {
     if (!value) {

@@ -7,4 +7,6 @@
 
 - (NSString *)descriptionForCSV;
 
+- (void)markAsSentToAdmin;
+
 @end

@@ -8,7 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface CegekaVisitorRegistrationTests : SenTestCase
+@interface CGKVisitorTest : SenTestCase
 
 @property (nonatomic, readonly) NSManagedObjectContext *testingContext;
 

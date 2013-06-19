@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		01613F4A17719CD9000202A2 /* CGKBadgeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01613F4917719CD9000202A2 /* CGKBadgeView.m */; };
+		564DD94F1771ED8100E4E31F /* CGKExportViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DD94E1771ED8100E4E31F /* CGKExportViewControllerTest.m */; };
+		564DD9521771EDC900E4E31F /* CGKTestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DD9511771EDC900E4E31F /* CGKTestCoreData.m */; };
 		567E31E417709E0900D89F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E317709E0900D89F54 /* UIKit.framework */; };
 		567E31E617709E0900D89F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E517709E0900D89F54 /* Foundation.framework */; };
 		567E31E817709E0900D89F54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E717709E0900D89F54 /* CoreGraphics.framework */; };
@@ -23,7 +25,7 @@
 		567E320917709E0A00D89F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E317709E0900D89F54 /* UIKit.framework */; };
 		567E320A17709E0A00D89F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E517709E0900D89F54 /* Foundation.framework */; };
 		567E321217709E0A00D89F54 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 567E321017709E0A00D89F54 /* InfoPlist.strings */; };
-		567E321517709E0A00D89F54 /* CegekaVisitorRegistrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */; };
+		567E321517709E0A00D89F54 /* CGKVisitorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 567E321417709E0A00D89F54 /* CGKVisitorTest.m */; };
 		56AA8C871770EC6800DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
 		56AA8C881770EC8E00DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
 		721C3107177196EE00B475F4 /* CGK_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C3106177196EE00B475F4 /* CGK_logo.png */; };
@@ -51,6 +53,10 @@
 /* Begin PBXFileReference section */
 		01613F4817719CD9000202A2 /* CGKBadgeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKBadgeView.h; sourceTree = "<group>"; };
 		01613F4917719CD9000202A2 /* CGKBadgeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGKBadgeView.m; sourceTree = "<group>"; };
+		564DD94D1771ED8100E4E31F /* CGKExportViewControllerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKExportViewControllerTest.h; sourceTree = "<group>"; };
+		564DD94E1771ED8100E4E31F /* CGKExportViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGKExportViewControllerTest.m; sourceTree = "<group>"; };
+		564DD9501771EDC900E4E31F /* CGKTestCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKTestCoreData.h; sourceTree = "<group>"; };
+		564DD9511771EDC900E4E31F /* CGKTestCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGKTestCoreData.m; sourceTree = "<group>"; };
 		567E31E017709E0900D89F54 /* CegekaVisitorRegistration.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CegekaVisitorRegistration.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		567E31E317709E0900D89F54 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		567E31E517709E0900D89F54 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -71,8 +77,8 @@
 		567E320717709E0A00D89F54 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		567E320F17709E0A00D89F54 /* CegekaVisitorRegistrationTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CegekaVisitorRegistrationTests-Info.plist"; sourceTree = "<group>"; };
 		567E321117709E0A00D89F54 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		567E321317709E0A00D89F54 /* CegekaVisitorRegistrationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CegekaVisitorRegistrationTests.h; sourceTree = "<group>"; };
-		567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CegekaVisitorRegistrationTests.m; sourceTree = "<group>"; };
+		567E321317709E0A00D89F54 /* CGKVisitorTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGKVisitorTest.h; sourceTree = "<group>"; };
+		567E321417709E0A00D89F54 /* CGKVisitorTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGKVisitorTest.m; sourceTree = "<group>"; };
 		56AA8C861770EC6800DE0DA3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		721C3106177196EE00B475F4 /* CGK_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CGK_logo.png; sourceTree = "<group>"; };
 		721C31081771A60300B475F4 /* CGKExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKExportViewController.h; sourceTree = "<group>"; };
@@ -193,8 +199,12 @@
 		567E320D17709E0A00D89F54 /* CegekaVisitorRegistrationTests */ = {
 			isa = PBXGroup;
 			children = (
-				567E321317709E0A00D89F54 /* CegekaVisitorRegistrationTests.h */,
-				567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */,
+				567E321317709E0A00D89F54 /* CGKVisitorTest.h */,
+				567E321417709E0A00D89F54 /* CGKVisitorTest.m */,
+				564DD94D1771ED8100E4E31F /* CGKExportViewControllerTest.h */,
+				564DD94E1771ED8100E4E31F /* CGKExportViewControllerTest.m */,
+				564DD9501771EDC900E4E31F /* CGKTestCoreData.h */,
+				564DD9511771EDC900E4E31F /* CGKTestCoreData.m */,
 				567E320E17709E0A00D89F54 /* Supporting Files */,
 			);
 			path = CegekaVisitorRegistrationTests;
@@ -356,10 +366,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				567E321517709E0A00D89F54 /* CegekaVisitorRegistrationTests.m in Sources */,
+				567E321517709E0A00D89F54 /* CGKVisitorTest.m in Sources */,
 				72AEF4CD1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */,
 				72AEF4D41770ABFC00555D90 /* _CGKVisitor.m in Sources */,
 				72AEF4D61770ABFC00555D90 /* CGKVisitor.m in Sources */,
+				564DD94F1771ED8100E4E31F /* CGKExportViewControllerTest.m in Sources */,
+				564DD9521771EDC900E4E31F /* CGKTestCoreData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

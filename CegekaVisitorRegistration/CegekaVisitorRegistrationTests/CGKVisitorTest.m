@@ -6,26 +6,18 @@
 //  Copyright (c) 2013 Cegeka. All rights reserved.
 //
 
-#import "CegekaVisitorRegistrationTests.h"
+#import "CGKVisitorTest.h"
 #import "CGKVisitor.h"
+#import "CGKTestCoreData.h"
 
-@implementation CegekaVisitorRegistrationTests
+@implementation CGKVisitorTest
 
 @synthesize testingContext;
 
 - (void)setUp
 {
-    [super setUp];
-    
-    // Set-up code here.
-    NSBundle *bundle = [NSBundle bundleForClass:[self class]];
-    NSString* path = [bundle pathForResource:@"CGKVisitors" ofType:@"momd"];
-    NSURL *momURL = [NSURL URLWithString:path];
-    NSManagedObjectModel *model = [[NSManagedObjectModel alloc] initWithContentsOfURL:momURL];
-    NSPersistentStoreCoordinator *coord = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel: model];
-    [coord addPersistentStoreWithType:NSInMemoryStoreType configuration:nil URL:nil options:nil error:nil];
-    testingContext = [[NSManagedObjectContext alloc] init];
-    [testingContext setPersistentStoreCoordinator: coord];
+    [super setUp];    
+    testingContext = [CGKTestCoreData testingContext];
 }
 
 - (void)tearDown
