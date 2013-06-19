@@ -57,7 +57,7 @@
     CGContextSetTextDrawingMode(ctx, kCGTextFill);
 
     ///////////////
-    // DEBUG -- draw devisor line
+    // DEBUG -- draw divisor line
     // Start at this point
     CGContextMoveToPoint(ctx, 0, DIVISOR_LINE);
     // Give instructions to the CGContext
@@ -67,11 +67,9 @@
     CGContextStrokePath(ctx);
     // END DEBUG
     ///////////////
-
-    float offSet;
     
     // first name
-    offSet = [self calculateOffSetForString:self.firstName withFontSize:FONT_SIZE_EXTRA_LARGE];
+    float offSet = [self calculateOffSetForString:self.firstName withFontSize:FONT_SIZE_EXTRA_LARGE];
     CGContextSelectFont(ctx, "Helvetica", FONT_SIZE_EXTRA_LARGE, kCGEncodingMacRoman);
     CGContextSetTextPosition(ctx, offSet, DIVISOR_LINE + INSET);
     CGContextShowText(ctx, [[self.firstName uppercaseString] UTF8String], [self.firstName length]);
@@ -111,8 +109,6 @@
 }
 
 - (UIImage *) getBadgeImage {
-    
-    
     UIGraphicsBeginImageContextWithOptions(CGSizeMake(BADGE_WIDTH, BADGE_HEIGHT), BADGE_OPACITY, BADGE_SCALE);
     CGContextRef context = UIGraphicsGetCurrentContext();
 
