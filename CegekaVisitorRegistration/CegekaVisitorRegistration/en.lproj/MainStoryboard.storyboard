@@ -50,24 +50,6 @@
                                     <action selector="emailEdited:" destination="2" eventType="editingChanged" id="xyX-TG-Bud"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="lastname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sai-Sv-2eH">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="244" id="Pzi-Sl-yN2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="visiting" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgB-rk-l2P">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="firstname" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG8-g1-Ra3">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-ob-a2o">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Print">
@@ -91,25 +73,18 @@
                             <constraint firstItem="cy8-df-A2m" firstAttribute="leading" secondItem="qHj-DS-2Ck" secondAttribute="leading" type="default" id="54A-m8-sXh"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="trailing" secondItem="qHj-DS-2Ck" secondAttribute="trailing" type="default" id="7lt-GR-72F"/>
                             <constraint firstItem="qHj-DS-2Ck" firstAttribute="trailing" secondItem="cy8-df-A2m" secondAttribute="trailing" type="default" id="8II-qP-sDe"/>
+                            <constraint firstAttribute="trailing" secondItem="Yah-ob-a2o" secondAttribute="trailing" constant="249" id="C9W-5J-YOz"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="kbu-VA-pQT" secondAttribute="leading" type="default" id="DO2-0J-Y3W"/>
-                            <constraint firstItem="m4g-ef-qQo" firstAttribute="top" secondItem="XG8-g1-Ra3" secondAttribute="top" type="default" id="FrP-9k-C4U"/>
                             <constraint firstItem="kbu-VA-pQT" firstAttribute="trailing" secondItem="m4g-ef-qQo" secondAttribute="trailing" type="default" id="I75-JF-AHG"/>
-                            <constraint firstItem="sai-Sv-2eH" firstAttribute="baseline" secondItem="qHj-DS-2Ck" secondAttribute="baseline" type="default" id="Kmh-3m-NV5"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="top" secondItem="5" secondAttribute="top" constant="263" id="Ku2-fw-79D"/>
-                            <constraint firstItem="sai-Sv-2eH" firstAttribute="trailing" secondItem="kgB-rk-l2P" secondAttribute="trailing" type="default" id="TET-J1-kfu"/>
-                            <constraint firstItem="sai-Sv-2eH" firstAttribute="leading" secondItem="XG8-g1-Ra3" secondAttribute="leading" type="default" id="aQ4-74-mCE"/>
                             <constraint firstItem="uzA-fg-0XQ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="51" id="anj-KZ-ECD"/>
                             <constraint firstItem="qHj-DS-2Ck" firstAttribute="top" secondItem="5" secondAttribute="top" constant="314" id="bSD-wU-o9r"/>
                             <constraint firstItem="LlC-SD-mb5" firstAttribute="trailing" secondItem="kbu-VA-pQT" secondAttribute="trailing" type="default" id="cqn-Jw-ip4"/>
                             <constraint firstAttribute="trailing" secondItem="uzA-fg-0XQ" secondAttribute="trailing" constant="133" id="guc-Ew-kqa"/>
-                            <constraint firstItem="sai-Sv-2eH" firstAttribute="leading" secondItem="kgB-rk-l2P" secondAttribute="leading" type="default" id="hek-Cl-hLA"/>
                             <constraint firstAttribute="bottom" secondItem="uzA-fg-0XQ" secondAttribute="bottom" constant="510" id="j9Z-5c-KJW"/>
-                            <constraint firstItem="XG8-g1-Ra3" firstAttribute="trailing" secondItem="Yah-ob-a2o" secondAttribute="trailing" type="default" id="nRJ-OW-yZG"/>
-                            <constraint firstAttribute="trailing" secondItem="sai-Sv-2eH" secondAttribute="trailing" constant="75" id="nTp-yW-jA0"/>
                             <constraint firstAttribute="bottom" secondItem="Yah-ob-a2o" secondAttribute="bottom" constant="264" id="nYS-Is-QMD"/>
                             <constraint firstItem="cy8-df-A2m" firstAttribute="top" secondItem="5" secondAttribute="top" constant="367" id="oZh-pi-bqz"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="qHj-DS-2Ck" secondAttribute="leading" type="default" id="t3e-P0-hwQ"/>
-                            <constraint firstAttribute="bottom" secondItem="kgB-rk-l2P" secondAttribute="bottom" constant="345" id="tL5-N4-QQB"/>
                             <constraint firstItem="LlC-SD-mb5" firstAttribute="leading" secondItem="kbu-VA-pQT" secondAttribute="leading" type="default" id="u3v-PP-Fbr"/>
                             <constraint firstItem="uzA-fg-0XQ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="637" id="ugE-P1-OBM"/>
                             <constraint firstItem="kbu-VA-pQT" firstAttribute="top" secondItem="5" secondAttribute="top" constant="213" id="xhF-vr-Bca"/>
@@ -121,12 +96,9 @@
                     <connections>
                         <outlet property="badgeView" destination="uzA-fg-0XQ" id="am9-9g-5hH"/>
                         <outlet property="emailTextField" destination="qHj-DS-2Ck" id="RYp-qk-I45"/>
-                        <outlet property="firstNameLabel" destination="XG8-g1-Ra3" id="ZBa-lT-xxm"/>
                         <outlet property="firstNameTextField" destination="LlC-SD-mb5" id="FeU-6f-21n"/>
-                        <outlet property="lastNameLabel" destination="sai-Sv-2eH" id="KI5-Ae-GgR"/>
                         <outlet property="lastNameTextField" destination="kbu-VA-pQT" id="1J7-ei-oVA"/>
                         <outlet property="licensePlateTextField" destination="cy8-df-A2m" id="gMM-Z4-l5M"/>
-                        <outlet property="visitingLabel" destination="kgB-rk-l2P" id="WLs-QE-t03"/>
                         <outlet property="visitingTextField" destination="m4g-ef-qQo" id="idn-g5-NSd"/>
                     </connections>
                 </viewController>
@@ -214,12 +186,9 @@
                 <relationship kind="action" name="visitingEdited:"/>
                 <relationship kind="outlet" name="badgeView" candidateClass="CGKBadgeView"/>
                 <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="firstNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="firstNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lastNameLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="lastNameTextField" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="licensePlateTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="visitingLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="visitingTextField" candidateClass="UITextField"/>
             </relationships>
         </class>

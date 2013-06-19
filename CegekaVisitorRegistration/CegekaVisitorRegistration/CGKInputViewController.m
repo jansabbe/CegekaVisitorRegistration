@@ -15,21 +15,28 @@
 @implementation CGKInputViewController 
 
 - (IBAction)firstNameEdited:(id)sender {
-    self.firstNameLabel.text = self.firstNameTextField.text;
+    self.badgeView.firstName = self.firstNameTextField.text;
+    [self.badgeView setNeedsDisplay];
 }
 
 - (IBAction)lastNameEdited:(id)sender {
-    self.lastNameLabel.text = self.lastNameTextField.text;
+    self.badgeView.lastName = self.lastNameTextField.text;
+    [self.badgeView setNeedsDisplay];
 }
 
 - (IBAction)visitingEdited:(id)sender {
-    self.visitingLabel.text = self.visitingTextField.text;
+    self.badgeView.visiting = self.visitingTextField.text;
+    [self.badgeView setNeedsDisplay];
 }
 
 - (IBAction)emailEdited:(id)sender {
 }
 
 - (IBAction)licensePlateEdited:(id)sender {
+}
+
+- (IBAction)printVisitorBadge:(id)sender {
+    NSLog(@"CGKInputViewController: printVisitorBadge was called...");
 }
 
 
