@@ -211,10 +211,10 @@
             </objects>
             <point key="canvasLocation" x="-1485" y="430"/>
         </scene>
-        <!--Export View Controller - Export View Controller-->
+        <!--Export View Controller-->
         <scene sceneID="WaF-vX-Dlt">
             <objects>
-                <viewController storyboardIdentifier="CGKExportViewController" title="Export View Controller" id="pab-zo-3Dh" customClass="CGKExportViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CGKExportViewController" id="pab-zo-3Dh" customClass="CGKExportViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PFg-cB-fR4">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
