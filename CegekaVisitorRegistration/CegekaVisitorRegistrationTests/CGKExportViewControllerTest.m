@@ -67,8 +67,7 @@
     //Calling private method for testing
     NSData* data = [self.exportController performSelector:@selector(visitorCsvAttachmentWithOnlyUnsentVisitors:) withObject:[NSNumber numberWithBool:YES]];
     
-    NSString* actualCsv = [NSString stringWithUTF8String:[data bytes]];
-
+    NSString* actualCsv = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSString* expectedCsv = [NSString stringWithFormat:@"%@\n%@\n", [visitor1 descriptionForCSV], [visitor2 descriptionForCSV] ];
     NSLog(@"Actual: \nSTART\n%@\nEND\n", actualCsv);
     NSLog(@"Expected: \nSTART\n%@\nEND\n", expectedCsv);
