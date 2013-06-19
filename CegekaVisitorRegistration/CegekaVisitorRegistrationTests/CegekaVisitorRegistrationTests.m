@@ -41,8 +41,12 @@
     visitor.firstName = @"Name";
     NSError* error = nil;
     [self.testingContext save:&error];
-
     STAssertNil(error, @"Error shouldn't occur while saving: %@", error);
+
+    CGKVisitor* foundVisitor = (CGKVisitor*)[self.testingContext existingObjectWithID:visitor.objectID error:&error];
+    
+    STAssertNil(error, @"Error shouldn't occur while saving: %@", error);
+    STAssertEqualObjects(visitor, foundVisitor, nil);
 }
 
 - (void)testSearchingAVisitor
