@@ -25,6 +25,7 @@
 		567E321517709E0A00D89F54 /* CegekaVisitorRegistrationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */; };
 		56AA8C871770EC6800DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
 		56AA8C881770EC8E00DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
+		721C3107177196EE00B475F4 /* CGK_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C3106177196EE00B475F4 /* CGK_logo.png */; };
 		72AEF4CC1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4CA1770ABE900555D90 /* CGKVisitors.xcdatamodeld */; };
 		72AEF4CD1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4CA1770ABE900555D90 /* CGKVisitors.xcdatamodeld */; };
 		72AEF4D31770ABFC00555D90 /* _CGKVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4D01770ABFC00555D90 /* _CGKVisitor.m */; };
@@ -67,6 +68,7 @@
 		567E321317709E0A00D89F54 /* CegekaVisitorRegistrationTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CegekaVisitorRegistrationTests.h; sourceTree = "<group>"; };
 		567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CegekaVisitorRegistrationTests.m; sourceTree = "<group>"; };
 		56AA8C861770EC6800DE0DA3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		721C3106177196EE00B475F4 /* CGK_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CGK_logo.png; sourceTree = "<group>"; };
 		72AEF4CB1770ABE900555D90 /* CGKVisitors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CGKVisitors.xcdatamodel; sourceTree = "<group>"; };
 		72AEF4CF1770ABFC00555D90 /* _CGKVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CGKVisitor.h; sourceTree = "<group>"; };
 		72AEF4D01770ABFC00555D90 /* _CGKVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CGKVisitor.m; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		567E31E917709E0900D89F54 /* CegekaVisitorRegistration */ = {
 			isa = PBXGroup;
 			children = (
+				721C3105177196EE00B475F4 /* images */,
 				72AEF4CE1770ABEE00555D90 /* Model */,
 				567E31F217709E0900D89F54 /* CGKAppDelegate.h */,
 				567E31F317709E0900D89F54 /* CGKAppDelegate.m */,
@@ -177,6 +180,14 @@
 				567E321017709E0A00D89F54 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		721C3105177196EE00B475F4 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				721C3106177196EE00B475F4 /* CGK_logo.png */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 		72AEF4CE1770ABEE00555D90 /* Model */ = {
@@ -267,6 +278,7 @@
 				567E31F817709E0900D89F54 /* Default@2x.png in Resources */,
 				567E31FA17709E0900D89F54 /* Default-568h@2x.png in Resources */,
 				567E31FD17709E0900D89F54 /* MainStoryboard.storyboard in Resources */,
+				721C3107177196EE00B475F4 /* CGK_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
