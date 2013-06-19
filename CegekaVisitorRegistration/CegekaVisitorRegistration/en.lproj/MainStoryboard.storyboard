@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12D78" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -37,6 +37,9 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="License plate" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cy8-df-A2m">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BmK-Nk-pP3"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -51,6 +54,9 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yah-ob-a2o">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="173" id="dcq-hW-0rW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="Print">
                                     <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
@@ -60,7 +66,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="printVisitorBadge:" destination="2" eventType="touchUpInside" id="B69-pl-sQj"/>
+                                    <action selector="handleVisitorInput:" destination="2" eventType="touchUpInside" id="Hcf-qU-2sX"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uzA-fg-0XQ" customClass="CGKBadgeView">
@@ -69,26 +75,27 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="LlC-SD-mb5" firstAttribute="top" secondItem="5" secondAttribute="top" constant="162" id="2ba-93-pb6"/>
-                            <constraint firstItem="cy8-df-A2m" firstAttribute="leading" secondItem="qHj-DS-2Ck" secondAttribute="leading" type="default" id="54A-m8-sXh"/>
+                            <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0DI-u2-YzN"/>
+                            <constraint firstItem="kbu-VA-pQT" firstAttribute="top" secondItem="5" secondAttribute="top" constant="77" id="46l-EX-3IK"/>
+                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="20" symbolic="YES" type="default" id="4cb-My-ooR"/>
                             <constraint firstItem="m4g-ef-qQo" firstAttribute="trailing" secondItem="qHj-DS-2Ck" secondAttribute="trailing" type="default" id="7lt-GR-72F"/>
                             <constraint firstItem="qHj-DS-2Ck" firstAttribute="trailing" secondItem="cy8-df-A2m" secondAttribute="trailing" type="default" id="8II-qP-sDe"/>
-                            <constraint firstAttribute="trailing" secondItem="Yah-ob-a2o" secondAttribute="trailing" constant="249" id="C9W-5J-YOz"/>
-                            <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="kbu-VA-pQT" secondAttribute="leading" type="default" id="DO2-0J-Y3W"/>
+                            <constraint firstItem="LlC-SD-mb5" firstAttribute="top" secondItem="5" secondAttribute="top" constant="26" id="GMp-5J-6v6"/>
+                            <constraint firstItem="cy8-df-A2m" firstAttribute="top" secondItem="5" secondAttribute="top" constant="231" id="Hco-oP-tLn"/>
                             <constraint firstItem="kbu-VA-pQT" firstAttribute="trailing" secondItem="m4g-ef-qQo" secondAttribute="trailing" type="default" id="I75-JF-AHG"/>
-                            <constraint firstItem="m4g-ef-qQo" firstAttribute="top" secondItem="5" secondAttribute="top" constant="263" id="Ku2-fw-79D"/>
-                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="top" secondItem="5" secondAttribute="top" constant="51" id="anj-KZ-ECD"/>
-                            <constraint firstItem="qHj-DS-2Ck" firstAttribute="top" secondItem="5" secondAttribute="top" constant="314" id="bSD-wU-o9r"/>
+                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="500" id="Ict-Gi-bqE"/>
+                            <constraint firstItem="qHj-DS-2Ck" firstAttribute="top" secondItem="5" secondAttribute="top" constant="178" id="Kdc-4d-chl"/>
+                            <constraint firstItem="cy8-df-A2m" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="ObC-Nr-WEU"/>
+                            <constraint firstItem="m4g-ef-qQo" firstAttribute="top" secondItem="5" secondAttribute="top" constant="127" id="Qzo-6a-QUG"/>
+                            <constraint firstAttribute="trailing" secondItem="uzA-fg-0XQ" secondAttribute="trailing" constant="144" id="SgO-bz-0Yc"/>
+                            <constraint firstItem="Yah-ob-a2o" firstAttribute="baseline" secondItem="cy8-df-A2m" secondAttribute="baseline" type="default" id="Tf6-VP-9LY"/>
+                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="bottom" secondItem="cy8-df-A2m" secondAttribute="bottom" type="default" id="Tr4-VN-7TQ"/>
+                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="trailing" secondItem="Yah-ob-a2o" secondAttribute="trailing" type="default" id="ZxS-Zc-2zS"/>
+                            <constraint firstItem="qHj-DS-2Ck" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aQj-au-fa9"/>
                             <constraint firstItem="LlC-SD-mb5" firstAttribute="trailing" secondItem="kbu-VA-pQT" secondAttribute="trailing" type="default" id="cqn-Jw-ip4"/>
-                            <constraint firstAttribute="trailing" secondItem="uzA-fg-0XQ" secondAttribute="trailing" constant="133" id="guc-Ew-kqa"/>
-                            <constraint firstAttribute="bottom" secondItem="uzA-fg-0XQ" secondAttribute="bottom" constant="510" id="j9Z-5c-KJW"/>
-                            <constraint firstAttribute="bottom" secondItem="Yah-ob-a2o" secondAttribute="bottom" constant="264" id="nYS-Is-QMD"/>
-                            <constraint firstItem="cy8-df-A2m" firstAttribute="top" secondItem="5" secondAttribute="top" constant="367" id="oZh-pi-bqz"/>
-                            <constraint firstItem="m4g-ef-qQo" firstAttribute="leading" secondItem="qHj-DS-2Ck" secondAttribute="leading" type="default" id="t3e-P0-hwQ"/>
-                            <constraint firstItem="LlC-SD-mb5" firstAttribute="leading" secondItem="kbu-VA-pQT" secondAttribute="leading" type="default" id="u3v-PP-Fbr"/>
-                            <constraint firstItem="uzA-fg-0XQ" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="637" id="ugE-P1-OBM"/>
-                            <constraint firstItem="kbu-VA-pQT" firstAttribute="top" secondItem="5" secondAttribute="top" constant="213" id="xhF-vr-Bca"/>
-                            <constraint firstItem="LlC-SD-mb5" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="200" id="xsf-I6-BQs"/>
+                            <constraint firstItem="LlC-SD-mb5" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="iyX-Jb-Gnl"/>
+                            <constraint firstItem="Yah-ob-a2o" firstAttribute="top" secondItem="5" secondAttribute="top" constant="300" id="k3l-AZ-NBp"/>
+                            <constraint firstItem="kbu-VA-pQT" firstAttribute="leading" secondItem="5" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="lbh-uW-44G"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -163,39 +170,6 @@
             <point key="canvasLocation" x="868" y="-118"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CGKBadgeView" superclassName="UIView">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKBadgeView.h"/>
-        </class>
-        <class className="CGKExportViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKExportViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="sendVisitorList:"/>
-                <relationship kind="outlet" name="sendAllVisitorsSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="sendButton" candidateClass="UIButton"/>
-            </relationships>
-        </class>
-        <class className="CGKInputViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CGKInputViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="emailEdited:"/>
-                <relationship kind="action" name="firstNameEdited:"/>
-                <relationship kind="action" name="lastNameEdited:"/>
-                <relationship kind="action" name="licensePlateEdited:"/>
-                <relationship kind="action" name="printVisitorBadge:"/>
-                <relationship kind="action" name="visitingEdited:"/>
-                <relationship kind="outlet" name="badgeView" candidateClass="CGKBadgeView"/>
-                <relationship kind="outlet" name="emailTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="firstNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="lastNameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="licensePlateTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="visitingTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

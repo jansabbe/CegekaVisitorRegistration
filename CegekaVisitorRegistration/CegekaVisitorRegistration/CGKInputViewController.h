@@ -13,7 +13,6 @@
 @interface CGKInputViewController : UIViewController /*<UIPrintInteractionControllerDelegate>*/
 
 @property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
-//@property (strong, nonatomic) CGKVisitor *visitor;
 
 @property (strong, nonatomic) IBOutlet UITextField *firstNameTextField;
 @property (strong, nonatomic) IBOutlet UITextField *lastNameTextField;
@@ -29,8 +28,5 @@
 - (IBAction)emailEdited:(id)sender;
 - (IBAction)licensePlateEdited:(id)sender;
 
-- (IBAction)printVisitorBadge:(id)sender;
-
-
-
+- (IBAction)handleVisitorInput:(id)sender;
 @end
