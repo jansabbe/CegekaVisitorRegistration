@@ -9,6 +9,10 @@
 #import "CGKBadgeView.h"
 
 #define FONT_SIZE 12
+#define BADGE_WIDTH 380
+#define BADGE_HEIGTH 241
+#define BADGE_OPACITY YES
+#define BADGE_SCALE 1.0
 
 @implementation CGKBadgeView
 
@@ -57,23 +61,15 @@
 - (UIImage *) getBadgeImage {
     
     
-//    UIGraphicsBeginImageContextWithOptions(size, opaque, scale);
-//    2) get the context
-//    
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//    3) draw whatever you need
-//    
-//    4) export the context into an image
-//    
-//    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-//    5) destroy the context
-//    
-//    UIGraphicsEndImageContext();
-//    6) store the reference to the image
-//    
-//    [yourArray addObject:image];
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(BADGE_WIDTH, BADGE_HEIGTH), BADGE_OPACITY, BADGE_SCALE);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    [self drawBadgeInContext:context];
     
-    return nil;
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return image;
 }
 
 @end

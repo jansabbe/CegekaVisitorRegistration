@@ -13,4 +13,5 @@
 @property (nonatomic, strong) NSString *lastName;
 @property (nonatomic, strong) NSString *visiting;
 
+- (UIImage *) getBadgeImage;
 @end
