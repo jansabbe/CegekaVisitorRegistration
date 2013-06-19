@@ -11,6 +11,7 @@
 		564DD94F1771ED8100E4E31F /* CGKExportViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DD94E1771ED8100E4E31F /* CGKExportViewControllerTest.m */; };
 		564DD9521771EDC900E4E31F /* CGKTestCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 564DD9511771EDC900E4E31F /* CGKTestCoreData.m */; };
 		564DD9531771FA8600E4E31F /* CGKExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C31091771A60300B475F4 /* CGKExportViewController.m */; };
+		564DD9541771FAF700E4E31F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721C310B1771B1A900B475F4 /* MessageUI.framework */; };
 		567E31E417709E0900D89F54 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E317709E0900D89F54 /* UIKit.framework */; };
 		567E31E617709E0900D89F54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E517709E0900D89F54 /* Foundation.framework */; };
 		567E31E817709E0900D89F54 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 567E31E717709E0900D89F54 /* CoreGraphics.framework */; };
@@ -111,6 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				564DD9541771FAF700E4E31F /* MessageUI.framework in Frameworks */,
 				56AA8C881770EC8E00DE0DA3 /* CoreData.framework in Frameworks */,
 				567E320817709E0A00D89F54 /* SenTestingKit.framework in Frameworks */,
 				567E320917709E0A00D89F54 /* UIKit.framework in Frameworks */,
