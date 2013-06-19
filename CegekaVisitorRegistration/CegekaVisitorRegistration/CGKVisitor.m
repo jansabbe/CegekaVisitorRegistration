@@ -13,10 +13,11 @@
 // Custom logic goes here.
 
 + (NSArray *)visitorsSince:(BOOL)lastExport inManagedObjectContext:(NSManagedObjectContext*)moc{
+    
     // Create the fetch request for the entity.
     
     NSFetchRequest *fetchRequest = [NSFetchRequest fetchRequestWithEntityName:[CGKVisitor entityName]];
-    
+
     //add a predicate if necessary
     if (lastExport) {
         NSPredicate *searchPredicate = [NSPredicate predicateWithFormat:@"sentToAdmin == %@", [NSNumber numberWithBool: NO]];

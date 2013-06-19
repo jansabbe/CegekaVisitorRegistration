@@ -9,6 +9,7 @@
 #import "CGKExportViewController.h"
 #import "CGKVisitor.h"
 #import <MessageUI/MessageUI.h>
+#import "CGKAppDelegate.h"
 
 @interface CGKExportViewController ()
 
@@ -39,10 +40,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (NSManagedObjectContext *)managedObjectContext{
+    CGKAppDelegate *delegate = (CGKAppDelegate*)[[UIApplication sharedApplication] delegate];
+    return delegate.managedObjectContext;
+}
+
 - (IBAction)sendVisitorList:(id)sender{
     //get the list of visitors from CoreData
 
-    NSArray *listOfVisitorsSinceLastExport = [CGKVisitor visitorsSince:_sendAllVisitorsSwitch.isOn inManagedObjectContext:_managedObjectContext];
+    NSArray *listOfVisitorsSinceLastExport = [CGKVisitor visitorsSince:_sendAllVisitorsSwitch.isOn inManagedObjectContext:self.managedObjectContext];
     if ([listOfVisitorsSinceLastExport count] > 0) {
         NSMutableString *visitorList = nil;
         for (CGKVisitor *visitor in listOfVisitorsSinceLastExport) {

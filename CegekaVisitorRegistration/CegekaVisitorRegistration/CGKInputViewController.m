@@ -7,7 +7,7 @@
 //
 
 #import "CGKInputViewController.h"
-
+#import "CGKAppDelegate.h"
 @interface CGKInputViewController ()
 
 @end
@@ -38,6 +38,11 @@
 - (IBAction)handleVisitorInput:(id)sender {
     [self storeVisitorInput];
     [self printVisitorBadge];
+}
+
+- (NSManagedObjectContext *)managedObjectContext{
+    CGKAppDelegate *delegate = (CGKAppDelegate*)[[UIApplication sharedApplication] delegate];
+    return delegate.managedObjectContext;
 }
 
 - (void) storeVisitorInput {

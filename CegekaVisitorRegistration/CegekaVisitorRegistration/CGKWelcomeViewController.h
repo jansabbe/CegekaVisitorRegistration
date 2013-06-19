@@ -10,5 +10,6 @@
 
 @interface CGKWelcomeViewController : UIViewController
 
+//@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 
 @end

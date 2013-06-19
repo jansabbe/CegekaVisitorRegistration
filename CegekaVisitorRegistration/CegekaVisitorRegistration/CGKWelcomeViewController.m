@@ -7,6 +7,8 @@
 //
 
 #import "CGKWelcomeViewController.h"
+#import "CGKInputViewController.h"
+#import "CGKExportViewController.h"
 
 @interface CGKWelcomeViewController ()
 
@@ -35,5 +37,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+//    if ([segue.identifier isEqualToString:@"inputViewController"]) {
+//        CGKInputViewController *inputVC = segue.destinationViewController;
+//        [inputVC setManagedObjectContext:self.managedObjectContext];
+//    } else if ([segue.identifier isEqualToString:@"exportViewController"]){
+//        CGKExportViewController *exportVC = segue.destinationViewController;
+//        [exportVC setManagedObjectContext:self.managedObjectContext];
+//    }
+//}
 
 @end

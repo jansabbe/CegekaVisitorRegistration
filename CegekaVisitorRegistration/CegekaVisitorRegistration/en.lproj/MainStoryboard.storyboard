@@ -7,7 +7,7 @@
         <!--Input View Controller-->
         <scene sceneID="4">
             <objects>
-                <viewController storyboardIdentifier="CGKInputViewController" id="2" customClass="CGKInputViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="CGKInputViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -117,7 +117,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="Fpj-wr-WB6">
             <objects>
-                <viewController storyboardIdentifier="CGKWelcomeViewController" id="Unb-6U-cFU" customClass="CGKWelcomeViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Unb-6U-cFU" customClass="CGKWelcomeViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lxJ-1c-hzk">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -142,7 +142,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="2" kind="modal" id="wMC-Bk-4mk"/>
+                                    <segue destination="2" kind="modal" identifier="" id="wMC-Bk-4mk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2uX-ef-CGL">
@@ -159,7 +159,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="pab-zo-3Dh" kind="modal" id="sFu-e9-NnB"/>
+                                    <segue destination="pab-zo-3Dh" kind="modal" identifier="" id="sFu-e9-NnB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Welkom bij Cegeka" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7f-UQ-NR8">
@@ -214,7 +214,7 @@
         <!--Export View Controller-->
         <scene sceneID="WaF-vX-Dlt">
             <objects>
-                <viewController storyboardIdentifier="CGKExportViewController" id="pab-zo-3Dh" customClass="CGKExportViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pab-zo-3Dh" customClass="CGKExportViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PFg-cB-fR4">
                         <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
