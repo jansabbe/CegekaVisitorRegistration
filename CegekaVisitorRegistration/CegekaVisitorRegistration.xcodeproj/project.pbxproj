@@ -27,6 +27,8 @@
 		56AA8C871770EC6800DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
 		56AA8C881770EC8E00DE0DA3 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56AA8C861770EC6800DE0DA3 /* CoreData.framework */; };
 		721C3107177196EE00B475F4 /* CGK_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 721C3106177196EE00B475F4 /* CGK_logo.png */; };
+		721C310A1771A60300B475F4 /* CGKExportViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721C31091771A60300B475F4 /* CGKExportViewController.m */; };
+		721C310C1771B1A900B475F4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721C310B1771B1A900B475F4 /* MessageUI.framework */; };
 		72AEF4CC1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4CA1770ABE900555D90 /* CGKVisitors.xcdatamodeld */; };
 		72AEF4CD1770ABE900555D90 /* CGKVisitors.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4CA1770ABE900555D90 /* CGKVisitors.xcdatamodeld */; };
 		72AEF4D31770ABFC00555D90 /* _CGKVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 72AEF4D01770ABFC00555D90 /* _CGKVisitor.m */; };
@@ -72,6 +74,9 @@
 		567E321417709E0A00D89F54 /* CegekaVisitorRegistrationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CegekaVisitorRegistrationTests.m; sourceTree = "<group>"; };
 		56AA8C861770EC6800DE0DA3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		721C3106177196EE00B475F4 /* CGK_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CGK_logo.png; sourceTree = "<group>"; };
+		721C31081771A60300B475F4 /* CGKExportViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGKExportViewController.h; sourceTree = "<group>"; };
+		721C31091771A60300B475F4 /* CGKExportViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGKExportViewController.m; sourceTree = "<group>"; };
+		721C310B1771B1A900B475F4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		72AEF4CB1770ABE900555D90 /* CGKVisitors.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CGKVisitors.xcdatamodel; sourceTree = "<group>"; };
 		72AEF4CF1770ABFC00555D90 /* _CGKVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _CGKVisitor.h; sourceTree = "<group>"; };
 		72AEF4D01770ABFC00555D90 /* _CGKVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _CGKVisitor.m; sourceTree = "<group>"; };
@@ -84,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721C310C1771B1A900B475F4 /* MessageUI.framework in Frameworks */,
 				56AA8C871770EC6800DE0DA3 /* CoreData.framework in Frameworks */,
 				567E31E417709E0900D89F54 /* UIKit.framework in Frameworks */,
 				567E31E617709E0900D89F54 /* Foundation.framework in Frameworks */,
@@ -117,6 +123,7 @@
 		567E31D717709E0900D89F54 = {
 			isa = PBXGroup;
 			children = (
+				721C310B1771B1A900B475F4 /* MessageUI.framework */,
 				56AA8C861770EC6800DE0DA3 /* CoreData.framework */,
 				567E31E917709E0900D89F54 /* CegekaVisitorRegistration */,
 				567E320D17709E0A00D89F54 /* CegekaVisitorRegistrationTests */,
@@ -156,6 +163,8 @@
 				567E31FB17709E0900D89F54 /* MainStoryboard.storyboard */,
 				567E31FE17709E0900D89F54 /* CGKInputViewController.h */,
 				567E31FF17709E0900D89F54 /* CGKInputViewController.m */,
+				721C31081771A60300B475F4 /* CGKExportViewController.h */,
+				721C31091771A60300B475F4 /* CGKExportViewController.m */,
 				567E31EA17709E0900D89F54 /* Supporting Files */,
 			);
 			path = CegekaVisitorRegistration;
@@ -333,6 +342,7 @@
 				72AEF4D31770ABFC00555D90 /* _CGKVisitor.m in Sources */,
 				72AEF4D51770ABFC00555D90 /* CGKVisitor.m in Sources */,
 				01613F4A17719CD9000202A2 /* CGKBadgeView.m in Sources */,
+				721C310A1771A60300B475F4 /* CGKExportViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
