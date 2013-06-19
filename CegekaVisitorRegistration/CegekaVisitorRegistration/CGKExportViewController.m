@@ -8,7 +8,7 @@
 
 #import "CGKExportViewController.h"
 #import "CGKVisitor.h"
-#import <MessageUI/MessageUI.h>
+
 #import "CGKAppDelegate.h"
 
 @interface CGKExportViewController ()
@@ -60,9 +60,12 @@
         MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
         [mailVC setSubject:@"The list of visitors at Cegeka"];
         [mailVC addAttachmentData:[visitorList dataUsingEncoding:NSUTF8StringEncoding] mimeType:@"text/csv" fileName:@"visitors.csv"];
+        [self presentViewController:mailVC animated:YES completion:nil];
     } else {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No visitors" message:@"There were no visitors since the last export" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
         [alert show];
     }
 }
+
+
 @end
